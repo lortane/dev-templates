@@ -22,6 +22,7 @@
       {pkgs}: {
         default = pkgs.mkShellNoCC {
           packages = with pkgs; [
+            alejandra
             nixd
             cachix
             lorri
