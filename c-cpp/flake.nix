@@ -29,16 +29,20 @@
           {
             packages = with pkgs;
               [
+                catch2_3
                 clang-tools
                 cmake
                 codespell
                 conan
                 cppcheck
                 doxygen
-                gtest
                 lcov
+                meson
+                ninja
+                valgrind
                 vcpkg
                 vcpkg-tool
+                xmake
               ]
               ++ (
                 if system == "aarch64-darwin"
